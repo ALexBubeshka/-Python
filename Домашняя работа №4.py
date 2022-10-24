@@ -70,16 +70,16 @@ def polynomial_list(k):
         list = []
         for i in range (0, k + 1):
             if k > 1: 
-                list.append(random.randint(0, 101))
+                list.append(random.randint(0, 100))
                 list.append('x^')
                 list.append(k)
                 list.append('+')
                 k -= 1
 
-        list.append(random.randint(0, 101))
+        list.append(random.randint(0, 100))
         list.append('x') 
         list.append('+')
-        list.append(random.randint(0, 101))
+        list.append(random.randint(0, 100))
         list.append('=')
         list.append('0')
         print(list)
