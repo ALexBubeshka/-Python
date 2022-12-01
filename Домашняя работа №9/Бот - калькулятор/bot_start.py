@@ -10,7 +10,7 @@ API_TOKEN = '5827391755:AAE3_aQ9Mgj8jW-I4B48U5rbsOKHXS3j8Ms'
 
 bot = telebot.TeleBot(API_TOKEN)
 
-@bot.message_handler(commands=['game'])
+@bot.message_handler(commands=['calculator'])
 def game(message):
       bot.send_message(message.chat.id,'Добро пожаловать в калькулятор\nВведите данные')
 
