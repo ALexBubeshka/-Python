@@ -9,22 +9,6 @@ bot = telebot.TeleBot(API_TOKEN)
 
 field = []
 
-# def player_move (field_print):
-#     try:
-#         move = input('Введите координаты через запятую от 0 до 2 ')
-#         move_coord = move.split(',')
-#         x = int(move_coord[0])
-#         y = int(move_coord[1])
-#         if field[x][y] == 'X' or field[x][y] == 'O':
-#             print('Пропускаете свой ход по причине ввода некорректных данных')
-#             return field_print
-#         else:
-#             field [x][y] = 'X'
-#             return field_print
-#     except:
-#         print('Пропускаете свой ход по причине ввода некорректных данных')
-#         return field_print
-
 def comp_move (field_print):
     print('ходит бот')
     x = random.randint(0,2)
@@ -81,9 +65,7 @@ def game(message):
 
       def player_move (field_print):
             try:
-                  bot.send_message(message.chat.id, message.text)
-                  bot.send_message(message.chat.id, "Введите координаты")
-                  bot.send_message(message.chat.id, "А теперь введите выражение" )
+                  bot.send_message(message.chat.id, "Введите координаты")  # В этом месте он не останавливается для получения данных от пользователя
                   move_coord = message.text.split(',')
                   x = int(move_coord[0])
                   y = int(move_coord[1])
