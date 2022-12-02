@@ -1,6 +1,7 @@
 import random
 import field
 
+
 def comp_move (field_print):
     global field
     print('ходит бот')
